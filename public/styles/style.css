@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    background-color: #f4f4f4;
+}
+
+/* title - starts */
+
+.title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: white;
+    color: #373737;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.title i {
+    font-size: 2.2rem;
+    margin-right: 3px;
+}
+
+.title h1::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 200px;
+    bottom: 10px;
+    border-radius: 8px;
+    background-color: #C0B283;
+}
+
+/* title - ends */
+
+.create-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+
+    width: 70%;
+
+    background-color: #dcd0c0;
+}
+
+.create-post h2 {
+    color: #373737;
+    position: relative;
+}
+
+.create-post h2::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 80px;
+    bottom: 2px;
+    border-radius: 8px;
+    background-color: #C0B283;
+}
+
+.create-post #title {
+    height: 30px;
+    width: 250px;
+}
+
+.create-post #description {
+    height: 80px;
+    width: 250px;
+}
+
+.mural {
+    width: 70%;
+    height: 70vh;
+    background-color: #dcd0c0;
+}
+
+.fa fa-plus-circle {
+    color: #373737;
+}
