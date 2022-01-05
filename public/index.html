@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
@@ -13,26 +14,62 @@
 <body>
 
     <!-- Header - starts -->
-    <header class="title">
+    <header class="header">
         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
         <h1>Mural de Avisos</h1>
+        <div class="social">
+            <a href="https://github.com/RamonSest0" target="_blank"><img class="github" src="./assets/github-logo.png"
+                    alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/ramon-sesto/" target="_blank"><img class="linkedin"
+                    src="./assets/linkedin-logo.png" alt="LinkedIn"></a>
+        </div>
     </header>
     <!-- Header - ends -->
+
+    <!-- main - starts -->
+
+    <main class="mural">
+        <!-- <div id="sdjhadk12" class="post">
+            <div class="post-title">
+                <h3>Título</h3>
+                <i class="fa fa-trash" onclick="deletePost()"></i>
+            </div>
+            <div class="post-description">
+                Lorem ipsum dolor
+            </div>
+            <div class="line-mural"></div>
+        </div> -->
+    </main>
+
+    <!-- main - ends -->
 
     <!-- Section - starts -->
 
     <section class="create-post">
 
-        <section class="mural"></section>
+        <div class="line"></div>
 
         <h2>Novo Aviso</h2>
         <input id="title" type="text" placeholder="Título">
         <textarea id="description" style="resize: none" placeholder="Descrição"></textarea>
-        <button>Salvar</button>
+        <button onclick="createPost()">Salvar</button>
 
     </section>
 
     <!-- Section - ends -->
+
+    <!-- footer - starts -->
+    <footer class="footer">
+        <p>Ramon Sesto</p>
+        <p>Projeto desenvolvido no curso <a href="https://programadorbr.com/" target="_blank"> ProgBr.</a></p> 
+    </footer>
+    <!-- footer - starts -->
+
+    <!-- script - starts -->
+
+    <script src="./scripts/script.js"></script>
+
+    <!-- script - ends -->
 
 </body>
 

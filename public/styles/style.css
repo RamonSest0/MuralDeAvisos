@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap'); 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: linear .1s;
 }
 
 body {
@@ -13,14 +14,12 @@ body {
     align-items: center;
     flex-direction: column;
     position: relative;
-
     background-color: #f4f4f4;
 }
 
-/* title - starts */
+/* header - starts */
 
-.title {
-    position: relative;
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,39 +27,128 @@ body {
     height: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
-
     background-color: white;
-    color: #373737;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-.title i {
+.header i {
     font-size: 2.2rem;
     margin-right: 3px;
+    color: #373737;
 }
 
-.title h1::before {
+.header h1 {
+    position: relative;
+    color: #373737;
+}
+
+.header h1::before {
     content: '';
     position: absolute;
     height: 5px;
     width: 200px;
-    bottom: 10px;
+    bottom: 6px;
     border-radius: 8px;
     background-color: #C0B283;
 }
 
-/* title - ends */
+.social {
+    position: absolute;
+    right: 40px;
+}
+
+.social .github {
+    margin-right: 20px;
+}
+
+/* header - ends */
+
+/* main -starts */
+
+.mural {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 60vh;
+    background-color: #dcd0c0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #dcd0c0;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #C0B283;
+}
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    background: #C0B283;
+}
+
+.mural .post {
+    width: 70%;
+    margin-top: 10px;
+
+}
+
+.mural .post-title {
+    background-color: #f4f4f4d0;
+    border: none;
+    border-left: 5px solid #c0b283;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding-left: 3px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.mural .post-description {
+    height: 8vh;
+    border: none;
+    border-left: 5px solid #C0B283;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 8px;
+    font-size: .9rem;
+    background-color: #f4f4f479;
+
+    text-align:justify;
+    overflow: hidden;
+}
+
+.mural .line-mural {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background-color: #3737374d;
+}
+
+/* main -ends */
+
+/* section - starts */
 
 .create-post {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-
     width: 70%;
-
     background-color: #dcd0c0;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    margin-bottom: 8px;
+    background-color: #3737374d;
 }
 
 .create-post h2 {
@@ -78,22 +166,88 @@ body {
     background-color: #C0B283;
 }
 
+.post-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title i {
+    font-size: 1.5rem;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.post-title i:hover {
+    color:#C0B283;
+}
+
 .create-post #title {
     height: 30px;
-    width: 250px;
+    width: 70%;
+    border: none;
+    border-left: 5px solid #C0B283;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding-left: 3px;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 .create-post #description {
     height: 80px;
-    width: 250px;
-}
-
-.mural {
     width: 70%;
-    height: 70vh;
-    background-color: #dcd0c0;
+    border: none;
+    border-left: 5px solid #C0B283;
+    border-radius: 3px;
+    padding-left: 3px;
+    margin-bottom: 8px;
+    font-size: .9rem;
 }
 
-.fa fa-plus-circle {
+.create-post button {
+    width: 130px;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 18px;
+    background-color: #C0B283;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #373737;
+    cursor: pointer;
+}
+
+.create-post button:hover {
+    background-color: #c4af6c;
+}
+
+/* section - ends */
+
+/* footer - starts */
+
+.footer {
+    width: 70%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e0e0e067;
+}
+
+.footer p {
+    font-weight: bolder;
     color: #373737;
 }
+
+.footer a {
+    color: #373737;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #c4af6c;
+}
+
+/* footer - starts */

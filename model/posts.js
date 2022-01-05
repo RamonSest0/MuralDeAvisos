@@ -1,12 +1,11 @@
 module.exports = {
 
     posts: [
-        {
-            id: "rm122",
-            title: "Teste de Título",
-            description: "Teste de descrição"
-        },
-
+        // {
+        //     id: "1m122",
+        //     title: "Teste de Título",
+        //     description: "Teste de descrição"
+        // },
     ],
 
     getAll() {
@@ -32,5 +31,5 @@ module.exports = {
 };
 
 function generateID() {
-    return Math.random().toString(36).substring(2, 9);
+    return "p" + Math.random().toString(36).substring(2, 9);
 };
